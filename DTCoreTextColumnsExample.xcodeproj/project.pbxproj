@@ -21,6 +21,8 @@
 		1C6FBC9F17EE461E00CF1A70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6FBC8117EE461E00CF1A70 /* UIKit.framework */; };
 		1C6FBCA717EE461E00CF1A70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C6FBCA517EE461E00CF1A70 /* InfoPlist.strings */; };
 		1C6FBCA917EE461E00CF1A70 /* DTCoreTextColumnsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6FBCA817EE461E00CF1A70 /* DTCoreTextColumnsExampleTests.m */; };
+		1C6FBCB317EE463100CF1A70 /* TextSample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1C6FBCB217EE463100CF1A70 /* TextSample.txt */; };
+		BE12FE737D734EBE95EA1438 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D142836BE96443F086717F77 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		1C6FBCA417EE461E00CF1A70 /* DTCoreTextColumnsExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTCoreTextColumnsExampleTests-Info.plist"; sourceTree = "<group>"; };
 		1C6FBCA617EE461E00CF1A70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1C6FBCA817EE461E00CF1A70 /* DTCoreTextColumnsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTCoreTextColumnsExampleTests.m; sourceTree = "<group>"; };
+		1C6FBCB217EE463100CF1A70 /* TextSample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TextSample.txt; sourceTree = "<group>"; };
+		7E196365AEEA44028F5974DE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D142836BE96443F086717F77 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 				1C6FBC8017EE461E00CF1A70 /* CoreGraphics.framework in Frameworks */,
 				1C6FBC8217EE461E00CF1A70 /* UIKit.framework in Frameworks */,
 				1C6FBC7E17EE461E00CF1A70 /* Foundation.framework in Frameworks */,
+				BE12FE737D734EBE95EA1438 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,7 @@
 				1C6FBCA217EE461E00CF1A70 /* DTCoreTextColumnsExampleTests */,
 				1C6FBC7C17EE461E00CF1A70 /* Frameworks */,
 				1C6FBC7B17EE461E00CF1A70 /* Products */,
+				7E196365AEEA44028F5974DE /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +112,7 @@
 				1C6FBC7F17EE461E00CF1A70 /* CoreGraphics.framework */,
 				1C6FBC8117EE461E00CF1A70 /* UIKit.framework */,
 				1C6FBC9C17EE461E00CF1A70 /* XCTest.framework */,
+				D142836BE96443F086717F77 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 				1C6FBC9317EE461E00CF1A70 /* ViewController.m */,
 				1C6FBC9517EE461E00CF1A70 /* Images.xcassets */,
 				1C6FBC8417EE461E00CF1A70 /* Supporting Files */,
+				1C6FBCB217EE463100CF1A70 /* TextSample.txt */,
 			);
 			path = DTCoreTextColumnsExample;
 			sourceTree = "<group>";
@@ -159,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C6FBCAC17EE461E00CF1A70 /* Build configuration list for PBXNativeTarget "DTCoreTextColumnsExample" */;
 			buildPhases = (
+				D623DEA4717F42C2991E4E36 /* Check Pods Manifest.lock */,
 				1C6FBC7617EE461E00CF1A70 /* Sources */,
 				1C6FBC7717EE461E00CF1A70 /* Frameworks */,
 				1C6FBC7817EE461E00CF1A70 /* Resources */,
+				B117E8BB9394454297552026 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +242,7 @@
 				1C6FBC9617EE461E00CF1A70 /* Images.xcassets in Resources */,
 				1C6FBC8817EE461E00CF1A70 /* InfoPlist.strings in Resources */,
 				1C6FBC9117EE461E00CF1A70 /* Main.storyboard in Resources */,
+				1C6FBCB317EE463100CF1A70 /* TextSample.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +255,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B117E8BB9394454297552026 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D623DEA4717F42C2991E4E36 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C6FBC7617EE461E00CF1A70 /* Sources */ = {
@@ -375,6 +420,7 @@
 		};
 		1C6FBCAD17EE461E00CF1A70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E196365AEEA44028F5974DE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -388,6 +434,7 @@
 		};
 		1C6FBCAE17EE461E00CF1A70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E196365AEEA44028F5974DE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -460,6 +507,7 @@
 				1C6FBCAE17EE461E00CF1A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C6FBCAF17EE461E00CF1A70 /* Build configuration list for PBXNativeTarget "DTCoreTextColumnsExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +516,7 @@
 				1C6FBCB117EE461E00CF1A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
